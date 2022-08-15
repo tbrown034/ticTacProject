@@ -1,0 +1,25 @@
+*{
+    background-color: lightblue;
+}
+
+.board {
+    background-color:whitesmoke;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 33% 33% 33%;
+    font-size: 200px;
+    font-weight: bolder;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    border: 10px solid whitesmoke;
+    /* border-right: 10px solid whitesmoke; */
+    margin: 10px;
+    
+}
+
+.cell {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    
+}
