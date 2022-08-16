@@ -18,18 +18,34 @@
         <p>Instructions: Decide whether you want to challenge the computer or face a human opponent</p>
         <p>You will be randomly selected to go first or second.</p>
     </section>
-    <section class="board">
-        <div class="cell" id="cell1">x</div>
-        <div class="cell" id="cell2">o</div>
-        <div class="cell" id="cell3">x</div>
-        <div class="cell" id="cell4">x</div>
-        <div class="cell" id="cell5">x</div>
-        <div class="cell" id="cell6">x</div>
-        <div class="cell" id="cell7">x</div>
-        <div class="cell" id="cell8">x</div>
-        <div class="cell" id="cell9">x</div>
+    <section class="selectOpponent">
+        <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play the Computer!</button>
+        <button type="button" class="playHuman" onclick="alert('Play Human!')">Play another human!</button>
     </section>
-
-
+    <section class="vsHuman">
+        <form>
+            <p>Player One</p>
+            <input type="text">
+            <p>Player Two</p>
+            <input type="text">
+        </form>
+        <button type="button" class="player1Name" onclick="alert('Play Computer!')">Play the Computer!</button>
+        <button type="button" class="player2Name" onclick="alert('Play Human!')">Play another human!</button>
+    </section>
+    <br/>
+    <br/>
+    <section class="boardContainer">
+        <div class="board">
+            <div class="cell" id="cell1">x</div>
+            <div class="cell" id="cell2"></div>
+            <div class="cell" id="cell3"></div>
+            <div class="cell" id="cell4">x</div>
+            <div class="cell" id="cell5"></div>
+            <div class="cell" id="cell6">o</div>
+            <div class="cell" id="cell7"></div>
+            <div class="cell" id="cell8">x</div>
+            <div class="cell" id="cell9">o</div>
+        </div>
+    </section>
 </body>
 </html>

@@ -2,24 +2,38 @@
     background-color: lightblue;
 }
 
+header {
+    background-color: lightyellow;
+}
+
+.boardContainer {
+    background-color: red;
+}
+
 .board {
-    background-color:whitesmoke;
+    background-color:lightpink;
     display: grid;
-    gap: 10px;
-    grid-template-columns: 33% 33% 33%;
-    font-size: 200px;
+    grid-template-columns: auto auto auto;
+    /* grid-template-rows: auto auto auto; */
+    border: 30px solid lightseagreen;
+    margin: 30px;
+    background-color: lightsalmon;
+    font-size: 100px;
     font-weight: bolder;
     color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
-    border: 10px solid whitesmoke;
-    /* border-right: 10px solid whitesmoke; */
-    margin: 10px;
+    font-family: Courier, monospace;
+
+
     
 }
 
 .cell {
     display: flex;
     justify-content: space-around;
-    align-content: space-around;
-    
+    border: 50px solid lightseagreen;
+
+}
+
+button {
+    background-color: lightseagreen;
 }
