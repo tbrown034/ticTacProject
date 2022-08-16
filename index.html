@@ -14,44 +14,59 @@
         <p>A HTML + CSS + JavaScript Project</p>
         <p>By Trevor Brown</p>
     </header>
-    <section class="instructions">
+    <!-- <section class="instructions">
         <h2>First Step: Select Your Opponent!</h2>
-        <p>Instructions: Decide whether you want to challenge the computer or face a human opponent. You will be randomly selected to go first or second.</p>
+        <p>Instructions: Decide whether you want to challenge the computer or face a human opponent. You will be randomly selected to go first or second.</p> -->
     </section>
-    <section class="selectOpponent">
-        <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play the Computer!</button>
-        <button type="button" class="playHuman" onclick="alert('Play Human!')">Play another human!</button>
+    <section class="selectOpponentContainer">
+        <div class="instructions">
+            <h2>First Step: Select Your Opponent!</h2>
+            <p>Instructions: Decide whether you want to challenge the computer or face a human opponent. You will be randomly selected to go first or second.</p>
+        </div>
+        <div class="selectOpponentButtons">
+            <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play the Computer!</button>
+            <button type="button" class="playHuman" onclick="alert('Play Human!')">Reset All!</button>
+            <button type="button" class="playHuman" onclick="alert('Play Human!')">Play another human!</button>
+        </div>
     </section>
-    <section class="vsHuman">
+    <section class="vsHumanContainer">
         <p>You have selected to play a human! Now enter your names belows, hit sumbit and let's go!</p>
         <div class="playerForms">
             <span class="playerOneForm">
-                <p>Player One:</p>
+                <p>1st Person:</p>
                 <input type="text" placeholder="Your name here...">
-                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit</button>
+                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
             </div>
             <span class="playerTwoForm">
-                <p>Player Two:</p>
+                <p>2nd Person:</p>
                 <input type="text" placeholder="Your name here...">
-                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit</button>
+                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
             </div>
         </div>
     </section>
-    <section class="vsComputer">
+    <section class="vsComputerContainer">
         <p>You have selected to play the computer! Enter your name and let's go!</p>
         <div class="playerForms">
             <span class="playerOneForm">
                 <p>Player One:</p>
                 <input type="text" placeholder="Your name here...">
-                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit</button>
+                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
             </div>
+    </section>
+    <section class="scoreBoardContainer">
+        <p>The Game</p>
+        <div clas="nameHolder">
+            <div>Player One, playing as the Xs is <output form="name1">"Name1."</output> You'll go first!
+            </span>
+            <div>Player Two, playing as the Os is <output form="name1">"Name2."</output> You'll go second!
+        </div>
+        <div class="PlayandReset">
+            <button type="button" class="playComputer" onclick="alert('Play Computer!')">Clear Board!</button>
+        </section>
+        </div>
     </section>
     <br/>
     <br/>
-    
-
-
-
     <section class="boardContainer">
         <div class="board">
             <div class="cell" id="cell1">x</div>
@@ -64,6 +79,14 @@
             <div class="cell" id="cell8">x</div>
             <div class="cell" id="cell9">o</div>
         </div>
+    </section>
+    <section class="winnerMessageContainer">
+        <div>Congrats [name]! You are the winner! Best Luck next time [name]</div>
+        <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play Again!</button>
+
+
+
+
     </section>
 </body>
 </html>
