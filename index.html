@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         type="text/css" href="style.css">
+    <script type="text/javascript" src="app.js" defer></script>
+
     <title>TicTacToe</title>
 </head>
 <body>
@@ -14,37 +16,34 @@
         <p>A HTML + CSS + JavaScript Project</p>
         <p>By Trevor Brown</p>
     </header>
-    <!-- <section class="instructions">
-        <h2>First Step: Select Your Opponent!</h2>
-        <p>Instructions: Decide whether you want to challenge the computer or face a human opponent. You will be randomly selected to go first or second.</p> -->
     </section>
-    <section class="selectOpponentContainer">
+    <section class="selectOpponent">
         <div class="instructions">
             <h2>First Step: Select Your Opponent!</h2>
             <p>Instructions: Decide whether you want to challenge the computer or face a human opponent. You will be randomly selected to go first or second.</p>
         </div>
         <div class="selectOpponentButtons">
-            <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play the Computer!</button>
-            <button type="button" class="playHuman" onclick="alert('Play Human!')">Reset All!</button>
-            <button type="button" class="playHuman" onclick="alert('Play Human!')">Play another human!</button>
+            <button type="button" id="playComputer">Play the Computer!</button>
+            <button type="button" id="resetButton" onclick="alert('Play Human!')">Reset All!</button>
+            <button type="button" id="playHuman" >Play another human!</button>
         </div>
     </section>
-    <section class="vsHumanContainer">
+    <section id="vsHuman">
         <p>You have selected to play a human! Now enter your names belows, hit sumbit and let's go!</p>
         <div class="playerForms">
-            <span class="playerOneForm">
+            <span class="player1Form">
                 <p>1st Person:</p>
                 <input type="text" placeholder="Your name here...">
                 <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
             </div>
-            <span class="playerTwoForm">
+            <span class="player2Form">
                 <p>2nd Person:</p>
                 <input type="text" placeholder="Your name here...">
                 <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
             </div>
         </div>
     </section>
-    <section class="vsComputerContainer">
+    <section id="vsComputer">
         <p>You have selected to play the computer! Enter your name and let's go!</p>
         <div class="playerForms">
             <span class="playerOneForm">
@@ -53,7 +52,7 @@
                 <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
             </div>
     </section>
-    <section class="scoreBoardContainer">
+    <section class="scoreBoard">
         <p>The Game</p>
         <div clas="nameHolder">
             <div>Player One, playing as the Xs is <output form="name1">"Name1."</output> You'll go first!
@@ -80,7 +79,7 @@
             <div class="cell" id="cell9">o</div>
         </div>
     </section>
-    <section class="winnerMessageContainer">
+    <section class="endMessage">
         <div>Congrats [name]! You are the winner! Best Luck next time [name]</div>
         <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play Again!</button>
 

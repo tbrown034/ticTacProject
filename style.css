@@ -20,7 +20,7 @@ body {
     
 }
 
-.selectOpponentContainer {
+.selectOpponent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
 }
 
 
-.vsHumanContainer {
+#vsHuman {
     text-align: center;
     font-size: 40px;
     display: flex;
@@ -44,19 +44,19 @@ body {
     border-bottom: 5px dashed aliceblue;
 }
 
-.playerOneForm {
+.player1Form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.playerTwoForm {
+.player2Form {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.vsComputerContainer {
+#vsComputer {
     text-align: center;
     font-size: 40px;
     display: flex;
@@ -66,7 +66,7 @@ body {
     border-bottom: 5px dashed aliceblue;
 }
 
-.scoreBoardContainer {
+.scoreBoard {
     text-align: center;
     font-size: 40px;
     display: flex;
@@ -100,7 +100,7 @@ body {
     font-family: Courier, monospace;
 }
 
-.winnerMessageContainer {
+.endMessage {
     text-align: center;
     font-size: 40px;
     display: flex;
@@ -112,7 +112,7 @@ body {
 
 
 button {
-    background-color: darkblue;
+    background-color: royalblue;
     font-size: 40px;
     color: whitesmoke;
     border-radius: 12px;
