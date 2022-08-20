@@ -7,7 +7,6 @@
     <link rel="stylesheet"
         type="text/css" href="style.css">
     <script type="text/javascript" src="app.js" defer></script>
-
     <title>TicTacToe</title>
 </head>
 <body>
@@ -24,24 +23,23 @@
         </div>
         <div class="selectOpponentButtons">
             <button type="button" id="playComputer">Play the Computer!</button>
-            <button type="button" id="resetButton" onclick="alert('Play Human!')">Reset All!</button>
+            <button type="button" id="resetButton" onclick="alert('Trying to Reset!')">Reset All!</button>
             <button type="button" id="playHuman" >Play another human!</button>
         </div>
     </section>
     <section id="vsHuman">
         <p>You have selected to play a human! Now enter your names belows, hit sumbit and let's go!</p>
-        <div class="playerForms">
-            <span class="player1Form">
-                <p>1st Person:</p>
-                <input type="text" placeholder="Your name here...">
-                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
-            </div>
-            <span class="player2Form">
-                <p>2nd Person:</p>
-                <input type="text" placeholder="Your name here...">
-                <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
-            </div>
-        </div>
+        <form action="" method="get" id="player1Form">
+                <label for="enterPlayer1"> Player 1 :</label>
+                <input type="text" placeholder="Your name here..." id="enterPlayer1">
+                <button type="submit" id="player1Button" onclick="Player1Name.innertext">Sumbit Name!</button>
+                <!-- <p>Player1Name</p> -->
+            </form>
+        <form action="" method="get" id="player2Form">
+                <label for="enterPlayer2"> Player 2 :</label>
+                <input type="text" placeholder="Your name here..." id="enterPlayer2">
+                <button type="button" id="player2Button" onclick="Player2Name()">Sumbit Name!</button>
+        </form>
     </section>
     <section id="vsComputer">
         <p>You have selected to play the computer! Enter your name and let's go!</p>
@@ -82,10 +80,6 @@
     <section class="endMessage">
         <div>Congrats [name]! You are the winner! Best Luck next time [name]</div>
         <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play Again!</button>
-
-
-
-
     </section>
 </body>
 </html>

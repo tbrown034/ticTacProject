@@ -10,15 +10,29 @@
 //       [null, null, null]
 //     ]
 //   }
-// DOM Selectors
+// DOM Selectors Areas
 const boardElement = document.getElementsByClassName("board");
 const vsHumanElement = document.getElementById("vsHuman");
 const vsComputerElement = document.getElementById("vsComputer")
+
+///DOM Selectors Forms 
+const player1Input = document.getElementById("enterPlayer1").value;
+const player2Input = document.getElementById("enterPlayer2").value;
 
 
 /// DOM Selector Buttons
 const playComputerButton = document.getElementById("playComputer");
 const playHumanButton = document.getElementById("playHuman");
+
+//Form Functions
+const Player1Name = () => {
+    return player1Input.innerHTML
+}
+
+const Player2Name = () => {
+    player2Input = document.getElementById("displayPlayer1").innerHTML
+}
+
 
 
 ///Button Functions

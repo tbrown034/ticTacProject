@@ -44,16 +44,14 @@ body {
     border-bottom: 5px dashed aliceblue;
 }
 
-.player1Form {
+#player1Form {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
 }
 
-.player2Form {
+#player2Form {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+        justify-content: space-around;
 }
 
 #vsComputer {
