@@ -29,26 +29,32 @@
     </section>
     <section id="vsHuman">
         <p>You have selected to play a human! Now enter your names belows, hit sumbit and let's go!</p>
-        <form action="" method="get" id="player1Form">
-                <label for="enterPlayer1"> Player 1 :</label>
-                <input type="text" placeholder="Your name here..." id="enterPlayer1">
-                <button type="submit" id="player1Button" onclick="Player1Name.innertext">Sumbit Name!</button>
-                <!-- <p>Player1Name</p> -->
-            </form>
-        <form action="" method="get" id="player2Form">
-                <label for="enterPlayer2"> Player 2 :</label>
-                <input type="text" placeholder="Your name here..." id="enterPlayer2">
-                <button type="button" id="player2Button" onclick="Player2Name()">Sumbit Name!</button>
-        </form>
+        <form action="" method="get" id="vsHumanForm">
+            <label for="enterPlayer1"> Player 1 :</label>
+            <input type="text" placeholder="Your name here..." id="enterPlayer1">
+            <label for="enterPlayer2"> Player 2 :</label>
+            <input type="text" placeholder="Your name here..." id="enterPlayer2">
+            <button type="submit" id="vsHumanSubmit" >Sumbit Names!
+            </button>
+        </form> 
     </section>
     <section id="vsComputer">
         <p>You have selected to play the computer! Enter your name and let's go!</p>
-        <div class="playerForms">
+        <form action="" method="get" id="vsComputerForm">
+            <label for="enterPlayerSolo"> Player:</label>
+            <input type="text" placeholder="Your name here..." id="enterPlayerSolo">
+            <button type="submit" id="vsComputerSubmit" >Sumbit Name!
+            </button>
+       
+       
+       
+       
+        <!-- <div class="playerForms">
             <span class="playerOneForm">
                 <p>Player One:</p>
                 <input type="text" placeholder="Your name here...">
                 <button type="button" class="player1Name" onclick="alert('Play Computer!')">Sumbit Name!</button>
-            </div>
+            </div> -->
     </section>
     <section class="scoreBoard">
         <p>The Game</p>

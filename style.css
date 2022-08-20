@@ -1,11 +1,5 @@
-
-
-h2 {
-    margin-bottom: none;
-}
-
 header {
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     border-bottom: 5px dashed aliceblue;
 }
@@ -23,7 +17,6 @@ body {
 .selectOpponent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     justify-content: space-around;
     border-bottom: 5px dashed aliceblue;
 }
@@ -34,35 +27,22 @@ body {
 }
 
 
-#vsHuman {
+#vsHuman, #vsComputer {
     text-align: center;
     font-size: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-around;
     border-bottom: 5px dashed aliceblue;
 }
 
-#player1Form {
-    display: flex;
-    justify-content: space-around;
-}
-
-#player2Form {
-    display: flex;
-        justify-content: space-around;
-}
-
-#vsComputer {
-    text-align: center;
-    font-size: 40px;
+#vsHumanForm, #vsComputerForm {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    justify-content: space-around;
-    border-bottom: 5px dashed aliceblue;
+    align-items: center;
 }
+
+
 
 .scoreBoard {
     text-align: center;
