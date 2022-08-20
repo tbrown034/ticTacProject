@@ -16,7 +16,7 @@ const vsHumanElement = document.getElementById("vsHuman");
 const vsComputerElement = document.getElementById("vsComputer")
 
 ///DOM Selectors Forms 
-const player1Input = document.getElementById("enterPlayer1").value;
+// const player1Input = document.getElementById("enterPlayer1").value;
 const player2Input = document.getElementById("enterPlayer2").value;
 
 
@@ -25,13 +25,20 @@ const playComputerButton = document.getElementById("playComputer");
 const playHumanButton = document.getElementById("playHuman");
 
 //Form Functions
-const Player1Name = () => {
-    return player1Input.innerHTML
+
+function displayPlayer1() {
+    let player1Input = document.getElementById("enterPlayer1").value;
+    alert("The name of the text field is: " + player1Input);
+
 }
 
-const Player2Name = () => {
-    player2Input = document.getElementById("displayPlayer1").innerHTML
-}
+// const Player1Name = () => {
+//     return player1Input.innerHTML
+// }
+
+// const Player2Name = () => {
+//     player2Input = document.getElementById("displayPlayer1").innerHTML
+// }
 
 
 
