@@ -34,8 +34,9 @@
             <input type="text" placeholder="Your name here..." id="enterPlayer1">
             <label for="enterPlayer2"> Player 2 :</label>
             <input type="text" placeholder="Your name here..." id="enterPlayer2">
-            <button type="submit" onclick="displayPlayer1()"  id="vsHumanSubmit" >Sumbit Names!
+            <button type="submit" onclick="displayPlayers()"  id="vsHumanSubmit" >Sumbit Names!
             </button>
+            <p>id="playersDisplay"</p>
         </form> 
     </section>
     <section id="vsComputer">
@@ -49,9 +50,9 @@
     <section class="scoreBoard">
         <p>The Game</p>
         <div clas="nameHolder">
-            <div>Player One, playing as the Xs is <output form="name1">"Name1."</output> You'll go first!
+            <div>Player One, playing as the Xs is "Name1."You'll go first!
             </span>
-            <div>Player Two, playing as the Os is <output form="name1">"Name2."</output> You'll go second!
+            <div>Player Two, playing as the Os is "Name2." You'll go second!
         </div>
         <div class="PlayandReset">
             <button type="button" class="playComputer" onclick="alert('Play Computer!')">Clear Board!</button>
