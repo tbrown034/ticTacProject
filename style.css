@@ -113,3 +113,12 @@ input {
     margin-bottom: 25px;
     font-size: 30px;
 }
+
+
+.x::after {
+    content: 'x';
+}
+
+.o::after {
+    content: 'o';
+}

@@ -23,7 +23,7 @@
         </div>
         <div class="selectOpponentButtons">
             <button type="button" id="playComputer">Play the Computer!</button>
-            <button type="button" id="resetButton" onclick="alert('Trying to Reset!')">Reset All!</button>
+            <button type="button" id="resetButton" onclick="resetAll()">Reset All!</button>
             <button type="button" id="playHuman" >Play another human!</button>
         </div>
     </section>
@@ -54,22 +54,19 @@
             <div>Player One, playing as the Xs is "Name1."You'll go first!
             </span>
             <div>Player Two, playing as the Os is "Name2." You'll go second!
-        </div>
-        <div class="PlayandReset">
-            <button type="button" class="playComputer" onclick="alert('Play Computer!')">Clear Board!</button>
+            <button type="button" class="playComputer" id="resetButton" onclick="resetAll()">Reset All!</button>
         </section>
         </div>
     </section>
     <br/>
     <br/>
-    <section class="boardContainer">
-        <div class="board">
+    <section class="board">
             <div class="cell" id="cell1">x</div>
             <div class="cell" id="cell2"></div>
             <div class="cell" id="cell3"></div>
-            <div class="cell" id="cell4">x</div>
-            <div class="cell" id="cell5"></div>
-            <div class="cell" id="cell6">o</div>
+            <div class="cell" id="cell4"></div>
+            <div class="cell" id="cell5">x</div>
+            <div class="cell" id="cell6"></div>
             <div class="cell" id="cell7"></div>
             <div class="cell" id="cell8">x</div>
             <div class="cell" id="cell9">o</div>

@@ -1,13 +1,33 @@
 // state
-// const state = {}
-// const initialState = {
-//     players: ['x', 'o'],
-//     board: [
-//       [null, null, null],
-//       [null, null, null],
-//       [null, null, null]
-//     ]
-//   }
+const state = {};
+const resetState = {
+    board: [
+      [null, null, null],
+      [null, null, null],
+      [null, null, null]
+    ] 
+  }
+
+const game = {
+    xTurn: true,
+    xState: [],
+    oState: [],
+  }
+  
+
+  // Note: Need to understand why/how this works better
+  document.addEventListener('click', event => { 
+    const target = event.target;
+    const cellValue = target.dataset.value;
+    game.xTurn === true
+        ? game.xState.push(cellValue)
+        : game.oState.push(cellValue)
+        target.classList.add('disabled')
+        target.classList.add(game.xTurn ? 'x' : 'o')
+        game.xTurn = !game.xTurn   
+    }
+  )
+
 // DOM Selectors Areas
 const boardElement = document.getElementsByClassName("board");
 const vsHumanElement = document.getElementById("vsHuman");
@@ -24,6 +44,13 @@ const playComputerButton = document.getElementById("playComputer");
 const playHumanButton = document.getElementById("playHuman");
 
 ///Button and Form Functions
+
+const resetBoard = () => {    
+}
+
+const resetAll = () => {
+    window.location.reload()
+}
 
 function displayPlayersFunction () {
     let player1Name = document.getElementById("enterPlayer1").value;
@@ -50,4 +77,6 @@ const playComputerClick = () => {
 
 playHumanButton.addEventListener("click", playHumanClick);
 playComputerButton.addEventListener("click", playComputerClick);
-// vsHumanSubmit.addEventListener("click", displayPlayers);
+resetButton.addEventListener("click", playComputerClick);
+
+
