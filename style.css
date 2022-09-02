@@ -1,5 +1,5 @@
 header {
-    font-size: 50px;
+    font-size: 10px;
     text-align: center;
     border-bottom: 5px dashed aliceblue;
 }
@@ -10,7 +10,7 @@ body {
 
 .instructions {
     text-align: center;
-    font-size: 30px;
+    font-size: 10px;
     
 }
 
@@ -29,7 +29,7 @@ body {
 
 #vsHuman, #vsComputer {
     text-align: center;
-    font-size: 40px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,41 +46,47 @@ body {
 
 .scoreBoard {
     text-align: center;
-    font-size: 40px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .nameHolder {
     text-align: center;
-    font-size: 40px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
 }
 
 
 .board {
-    background-color:deepskyblue;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 10px solid aliceblue;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 200px 200px 200px;
 }
 
 
-
 .cell {
-    display: flex;
-    border: 10px solid aliceblue;
-    justify-content: space-around;
-    font-size: 200px;
+    border: 2px solid aliceblue;
+    background-color: midnightblue;
     font-weight: bolder;
-    color: whitesmoke;
+    font-size: 120px;
+    color: yellow;
     font-family: Courier, monospace;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cell:hover {
+    background-color: rgb(80, 80, 136);
 }
 
 .endMessage {
     text-align: center;
-    font-size: 40px;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,12 +97,11 @@ body {
 
 button {
     background-color: royalblue;
-    font-size: 40px;
+    font-size: 5px;
     color: whitesmoke;
     border-radius: 12px;
     margin: 10px;
     margin-bottom: 25px;
-    min-height:90px; 
     box-shadow: 4px 6px rgb(41, 68, 149);
 }
 
@@ -111,14 +116,14 @@ input {
     width: 50%;
     margin: 5px;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 10px;
 }
 
 
-.x::after {
+/* .x::after {
     content: 'x';
 }
 
 .o::after {
     content: 'o';
-}
+} */

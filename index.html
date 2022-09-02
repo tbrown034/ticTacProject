@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         type="text/css" href="style.css">
-    <script type="text/javascript" src="app.js" defer></script>
+    <script defer type="text/javascript" src="app.js" defer></script>
     <title>TicTacToe</title>
 </head>
 <body>
@@ -39,8 +39,7 @@
             <p id="playerNames"></p>
         </div> 
     </section>
-    <section id="vsComputer">
-        <p>You have selected to play the computer! Enter your name and let's go!</p>
+    <section id="vsComputer">        <p>You have selected to play the computer! Enter your name and let's go!</p>
         <Div id="vsComputerForm">
             <label for="enterPlayerSolo"> Player:</label>
             <input type="text" placeholder="Your name here..." id="enterPlayerSolo">
@@ -58,19 +57,17 @@
         </section>
         </div>
     </section>
-    <br/>
-    <br/>
-    <section class="board">
-            <div class="cell" id="cell1">x</div>
-            <div class="cell" id="cell2"></div>
-            <div class="cell" id="cell3"></div>
-            <div class="cell" id="cell4"></div>
-            <div class="cell" id="cell5">x</div>
-            <div class="cell" id="cell6"></div>
-            <div class="cell" id="cell7"></div>
-            <div class="cell" id="cell8">x</div>
-            <div class="cell" id="cell9">o</div>
-        </div>
+    <section class="board" id="board">
+        <div class="cell" id="cell1"></div>
+        <div class="cell" id="cell2"></div>
+        <div class="cell" id="cell3"></div>
+        <div class="cell" id="cell4"></div>
+        <div class="cell" id="cell5"></div>
+        <div class="cell" id="cell6"></div>
+        <div class="cell" id="cell7"></div>
+        <div class="cell" id="cell8"></div>
+        <div class="cell" id="cell9"></div>
+    </section>
     </section>
     <section class="endMessage">
         <div>Congrats [name]! You are the winner! Best Luck next time [name]</div>
