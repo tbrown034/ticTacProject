@@ -19,7 +19,6 @@
     <section class="selectOpponent">
         <div class="instructions">
             <h2>First Step: Select Your Opponent!</h2>
-            <p>Instructions: Decide whether you want to challenge the computer or face a human opponent. You will be randomly selected to go first or second.</p>
         </div>
         <div class="selectOpponentButtons">
             <button type="button" id="playComputer">Play the Computer!</button>
@@ -53,11 +52,12 @@
         <h2 class="game--status"></h2>
         <p id="statusDisplay"></p>
         <div clas="nameHolder">
-            <button type="button" class="playComputer" id="resetButton" onclick="resetAll()">Reset All!</button>
+            <button type="button" id="resetButton" onclick="resetAll()">Reset Board</button>
         </section>
         </div>
     </section>
     <section class="board" id="board">
+        <div class="cell" id="cell0"></div>
         <div class="cell" id="cell1"></div>
         <div class="cell" id="cell2"></div>
         <div class="cell" id="cell3"></div>
@@ -66,12 +66,11 @@
         <div class="cell" id="cell6"></div>
         <div class="cell" id="cell7"></div>
         <div class="cell" id="cell8"></div>
-        <div class="cell" id="cell9"></div>
     </section>
     </section>
     <section class="endMessage">
         <div>Congrats [name]! You are the winner! Best Luck next time [name]</div>
-        <button type="button" class="playComputer" onclick="alert('Play Computer!')">Play Again!</button>
+        <button type="button" id="resetButton">Play Again!</button>
     </section>
 </body>
 </html>
